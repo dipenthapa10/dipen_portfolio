@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-color: #F9F8F6;
+    color: #333;
+
+}
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+
+    background-color: rgb(249, 248, 246, 0.9);
+    z-index: 9999;
+
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    /* Matches the 'Dipen' script style */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20%;
+    padding-right: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #888;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* This creates the background with transparency */
+    /* Adjust the 0.6 value to make it more or less transparent */
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url('../images/lake-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+.home-content {
+    z-index: 2;
+    /* Keeps text above shapes */
+}
+
+.greeting {
+    letter-spacing: 3px;
+    font-size: 30rerm;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}

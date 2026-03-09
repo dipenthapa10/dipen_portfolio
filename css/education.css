@@ -1,0 +1,77 @@
+.education-section {
+    padding: 100px 10%;
+    background-color: rgb(239, 233, 227);
+
+}
+
+.education-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* The vertical line on the left */
+.timeline-container {
+    position: relative;
+    border-left: 1px solid #ddd;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.edu-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* The small circle on the line */
+.timeline-dot {
+    position: absolute;
+    left: -47px;
+    /* Centers it perfectly on the line */
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+}
+
+/* The Box styling */
+.edu-box {
+    border: 1px solid #ddd;
+    padding: 30px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.edu-box:hover {
+    border-color: #bbb;
+    background-color: #fff;
+    /* Slight pop on hover */
+}
+
+.edu-box h4 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #333;
+}
+
+.edu-sub {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 8px 0 20px 0;
+}
+
+.edu-details p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    margin: 5px 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.edu-details strong {
+    color: #222;
+}

@@ -5,20 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipen's Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/me.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/project.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Love+Light&family=Notable&family=Pinyon+Script&family=Satisfy&family=Waterfall&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Waterfall&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo">Dipen</div>
         <ul class="nav-links">
-            <li><a href="about">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header class="hero">
-        <div class="hero-content">
+
+    <header class="home">
+        <div class="home-content">
             <p class="greeting">NAMASTE, HELLO I AM</p>
             <h1 class="name ">Dipen</h1>
             <p class="tagline">Student, Happy, Learning </p>
@@ -26,36 +43,129 @@
     </header>
 
     <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hi, I'm Dipen! I'm a dedicated student with a passion for learning and exploring new
-                    technologies.blabla...........................................................</p>
-                <p> blablabla</p>
+        <div class="about-container">
+            <div class="about-sidebar">
+                <div class="info-item">
+                    <span class="label">NAME:</span>
+                    <span class="value">Dipen Thapa</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">SCHOOL:</span>
+                    <span class="value">Kent State University</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">HOMETOWN:</span>
+                    <span class="value">Kathmandu, Nepal</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/dipen.thapa.122256" target="_blank"><i
+                            class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="https://www.instagram.com/dipenn.thapa/" target="_blank"></i><i
+                            class="fa-brands fa-instagram fa-2xl"></i></i></a>
+                    <a href="https://www.linkedin.com/in/dipen-thapa-7189042a4/" target="_blank"></i><i
+                            class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href="https://github.com/dipenthapa10?tab=repositories" target="_blank"><i
+                            class="fa-brands fa-github fa-2xl"></i></a>
+                </div>
+                <a href="Dipen_Resume.pdf" target="_blank" class="resume-button">DOWNLOAD RESUME</a>
             </div>
 
-            <div class="about-details">
-                <div class="education">
-                    <h3>🎓 Education</h3>
-                    <div class="timeline-container">
-                        <div class="edu-item">
-                            <span>2022 - Present</span>
-                            <h4>Bachelor's Degree</h4>
-                            <p>Computer Science<br>Kent State University</p>
-                        </div>
-                        <div class="edu-item">
-                            <span>2020 - 2022</span>
-                            <h4>High School</h4>
-                            <p>Science Stream<br>Uniglobe S/S College</p>
-                        </div>
-                        <div class="edu-item">
-                            <span>2010 - 2020</span>
-                            <h4>High School Diploma</h4>
-                            <p>Science Stream<br>Daffodil School</p>
-                        </div>
+            <div class="about-main">
+                <h2>About Me</h2>
+                <div class="bio-text">
+                    <p>
+                        Hi, I'm Dipen Thapa from Kathmandu, Nepal. I am currently studying at
+                        Kent State University in the United States. I have been studying computer science for few years
+                        now and I am
+                        comfortable coding in C++, Python, Html, CSS and currently I am in process of learning
+                        Javascript,
+                        React.
+                    </p>
+                    <p>
+                        I enjoy playing different sports, especially football and table tennis, which are my favorites.
+                        I also enjoy playing the
+                        guitar and learning new things that help me grow both personally and professionally. I also like
+                        traveling,
+                        exploring new places, and spending time in nature. I enjoy trying new activities and exploring
+                        different interests
+                        whenever I get the chance.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <h2>My Education</h2>
+
+        <div class="timeline-container">
+            <div class="edu-item">
+                <div class="timeline-dot"></div>
+                <div class="edu-box">
+                    <h4>Kent State University</h4>
+                    <p class="edu-sub">Bachelors Degree | 2024-Present</p>
+                    <div class="edu-details">
+                        <p><strong>Major:</strong> Computer Science </p>
+                        <p><strong>Coursework:</strong> Software Engineering (ongoing), CS III- Programming
+                            Patterns (ongoing), Data Structures/Abstraction, Object Oriented
+                            Programming, Discreate Structures, Database System Design, Analytic Geometry and Calculus I,
+                            Brief Calculus II, Harvard
+                            CS50- Web Programming(self)
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <div class="edu-item">
+                <div class="timeline-dot"></div>
+                <div class="edu-box">
+                    <h4>Uniglobe S/S College</h4>
+                    <p class="edu-sub">High School Degree | 2021-2023</p>
+                    <div class="edu-details">
+                        <p><strong>Stream:</strong> Science</p>
+                        <p><strong> Relevant Coursework:</strong> Computer Science, Physics, Chemistery, Mathematics
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="timeline-dot"></div>
+                <div class="edu-box">
+                    <h4>Daffodil School</h4>
+                    <p class="edu-sub">School Education | 2008-2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects" class="project-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Personal Website</h3>
+                <p> I built this website for my personal portfolio where I have user HTML/CSS and Javascript and
+                    decorating the pafe according to my preferences and aesthetic</p>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Kakshya</h3>
+                <p> I built Kakshya, a web-based course management system for my Database Systems class. The project
+                    allows administrators,
+                    instructors, and students to manage courses, sections, and grades through a clean web interface.</p>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Flask</span>
+                </div>
+            </div>
+        </div>
+
     </section>
 </body>
 

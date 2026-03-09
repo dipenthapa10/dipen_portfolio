@@ -1,0 +1,92 @@
+/* about section  */
+
+.about-section {
+    background-color: #fff;
+    padding: 100px 0;
+
+
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 150px;
+    /* Large gap for a modern look */
+    padding: 0 50px;
+}
+
+/* Left Column Styling */
+.about-sidebar {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-item {
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.85rem;
+}
+
+.label {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    width: 120px;
+    color: #333;
+}
+
+.value {
+    color: #888;
+    font-size: 17px;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Right Column Styling */
+.about-main {
+    flex: 2;
+}
+
+.about-main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #080808;
+}
+
+.bio-text p {
+    line-height: 2;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.resume-button {
+    display: inline-block;
+    margin-top: 70px;
+    padding: 15px 35px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #333;
+    color: #fff;
+}
