@@ -1,0 +1,95 @@
+.contact-section {
+    padding: 120px 0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.aesthetic-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: #4b2c71;
+    /* Your purple accent */
+    margin-bottom: 50px;
+}
+
+.contact-grid {
+    display: flex;
+    gap: 100px;
+}
+
+.contact-info-panel {
+    flex: 1;
+}
+
+.contact-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.detail-item {
+    display: block;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Form Styling */
+.aesthetic-form {
+    flex: 1.2;
+}
+
+.input-container {
+    margin-bottom: 25px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    background: none;
+    border: 1px solid #1a1a1a;
+    padding: 12px 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1a1a1a;
+    color: #fff;
+}

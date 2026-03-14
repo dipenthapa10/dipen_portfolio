@@ -1,19 +1,38 @@
 /* about section  */
 
+
+
 .about-section {
     background-color: #fff;
     padding: 100px 0;
 
+    /* We change 'cover' to a specific size (like 40%) and position it to the 'right' */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('../images/me.png');
 
+    background-color: #EFE9E3;
+
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    background-size: contain;
+
+    background-attachment: scroll;
+
+
+    position: relative;
 }
 
 .about-container {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    gap: 150px;
-    /* Large gap for a modern look */
+    gap: 100px;
+
     padding: 0 50px;
+    position: relative;
+    z-index: 2;
+
 }
 
 /* Left Column Styling */
@@ -69,7 +88,7 @@
 
 .bio-text p {
     line-height: 2;
-    color: #555;
+    color: #3f3f3f;
     margin-bottom: 25px;
     font-size: 1rem;
 }
@@ -89,4 +108,17 @@
 .resume-button:hover {
     background-color: #333;
     color: #fff;
+}
+
+/* Initial state: Hidden and slightly lower */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Final state: Visible and in position */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }

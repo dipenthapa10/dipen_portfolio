@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipen's Personal Website</title>
     <link rel="icon" type="image/png" href="images/me.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/education.css">
-    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/education.css">
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/hero.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- google fonts -->
@@ -22,25 +25,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Waterfall&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Silkscreen:wght@400;700&family=Waterfall&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Silkscreen:wght@400;700&family=Waterfall&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Major+Mono+Display&family=Silkscreen:wght@400;700&family=Waterfall&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Waterfall&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Indie+Flower&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Waterfall&display=swap"
+        rel="stylesheet">
+
+
+
+    <script src="script.js"></script>
+
 </head>
 
 <body>
+
     <nav class="navbar">
-        <div class="logo">Dipen</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">DIPPSZ</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header class="home">
+    <header id="home" class="home">
         <div class="home-content">
             <p class="greeting">NAMASTE, HELLO I AM</p>
-            <h1 class="name ">Dipen</h1>
-            <p class="tagline">Student, Happy, Learning </p>
+            <h1 class="name ">Dipen Thapa</h1>
+            <p class="tagline">
+                <span>Student</span>
+                <span>Happy</span>
+                <span>Learning</span>
+                </span>
+            </p>
         </div>
     </header>
+
+
 
     <section id="about" class="about-section">
         <div class="about-container">
@@ -96,51 +131,48 @@
         </div>
     </section>
 
-    <section id="education" class="education-section">
-        <h2>My Education</h2>
+    <section id="education" class="edu-bold-aesthetic">
+        <div class="edu-container">
+            <header class="edu-header">
+                <span class="edu-tag">ACADEMIC JOURNEY</span>
+                <h2 class="edu-main-title">Education</h2>
+            </header>
 
-        <div class="timeline-container">
-            <div class="edu-item">
-                <div class="timeline-dot"></div>
-                <div class="edu-box">
-                    <h4>Kent State University</h4>
-                    <p class="edu-sub">Bachelors Degree | 2024-Present</p>
-                    <div class="edu-details">
-                        <p><strong>Major:</strong> Computer Science </p>
-                        <p><strong>Coursework:</strong> Software Engineering (ongoing), CS III- Programming
-                            Patterns (ongoing), Data Structures/Abstraction, Object Oriented
-                            Programming, Discreate Structures, Database System Design, Analytic Geometry and Calculus I,
-                            Brief Calculus II, Harvard
-                            CS50- Web Programming(self)
-                        </p>
+            <div class="edu-list">
+                <div class="edu-entry">
+                    <h3 class="school-name-big">Kent State University</h3>
+                    <div class="degree-row">
+                        <span class="degree-name-small">B.S. Computer Science</span>
+                        <span class="edu-year">2024 — Present</span>
                     </div>
+                    <p class="edu-description">Coursework: Software Engineering (ongoing), CS III- Programming Patterns
+                        (ongoing), Data Structures/Abstraction, Object Oriented
+                        Programming, Discreate Structures, Database System Design, Analytic Geometry and Calculus I,
+                        Brief Calculus II, Harvard
+                        CS50- Web Programming(self)</p>
                 </div>
-            </div>
 
-            <div class="edu-item">
-                <div class="timeline-dot"></div>
-                <div class="edu-box">
-                    <h4>Uniglobe S/S College</h4>
-                    <p class="edu-sub">High School Degree | 2021-2023</p>
-                    <div class="edu-details">
-                        <p><strong>Stream:</strong> Science</p>
-                        <p><strong> Relevant Coursework:</strong> Computer Science, Physics, Chemistery, Mathematics
-                        </p>
+                <div class="edu-entry">
+                    <h3 class="school-name-big">Uniglobe S/S College</h3>
+                    <div class="degree-row">
+                        <span class="degree-name-small">High School Science</span>
+                        <span class="edu-year">2021 — 2023</span>
                     </div>
+                    <p class="edu-description">Advanced focus on Physics, Mathematics, and Computer Science.</p>
                 </div>
-            </div>
 
-            <div class="edu-item">
-                <div class="timeline-dot"></div>
-                <div class="edu-box">
-                    <h4>Daffodil School</h4>
-                    <p class="edu-sub">School Education | 2008-2021</p>
+                <div class="edu-entry">
+                    <h3 class="school-name-big">Daffodil School</h3>
+                    <div class="degree-row">
+                        <span class="degree-name-small">School Education</span>
+                        <span class="edu-year">2008 — 2021</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="Projects" class="project-section">
+    <section id="projects" class="project-section">
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="project-card">
@@ -166,6 +198,41 @@
             </div>
         </div>
 
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <h2 class="aesthetic-title">Get in Touch</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <p class="contact-desc">
+                        I’m currently seeking internships and open to collaborative projects.
+                        Let's create something meaningful together.
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:your.email@kent.edu" class="detail-item">your.email@kent.edu</a>
+                        <p class="detail-item">Kent, Ohio — Kathmandu, Nepal</p>
+                    </div>
+                </div>
+
+                <form class="aesthetic-form" action="https://formspree.io/f/your-id" method="POST">
+                    <div class="input-container">
+                        <input type="text" name="name" required placeholder="Name">
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" required placeholder="Email Address">
+                    </div>
+                    <div class="input-container">
+                        <textarea name="message" rows="4" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 

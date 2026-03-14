@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+
+    background-color: #F9F8F6;
+    color: #333;
+
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.037)), url('../images/lake-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-color: #EFE9E3; */
+
+}
+
+
+.home-content {
+    z-index: 2;
+
+}
+
+.greeting {
+    letter-spacing: 3px;
+    font-size: 30rerm;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 7rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.tagline span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

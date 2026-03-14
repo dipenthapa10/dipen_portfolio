@@ -1,0 +1,82 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    /* Moves it down from the very top */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centers the pill */
+    z-index: 9999;
+    background: transparent;
+    border: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    padding: 12px 40px;
+    transition: all 0.4s ease-in-out;
+    /* Smooth transition */
+
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+/* 2. Scrolled State: The pill shape appears */
+.nav-container.scrolled {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+    /* Slight drop effect */
+}
+
+.logo a {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #1a1a1a;
+
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    /* This puts them in a row */
+    align-items: center;
+    /* Centers them vertically */
+    gap: 40px;
+    /* Adds even space between each word */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* Makes it ALL CAPS */
+    font-size: 0.75rem;
+    /* Small font size is more aesthetic */
+    letter-spacing: 0.15em;
+    /* This adds the wide spacing between letters */
+    font-weight: 500;
+    /* Medium thickness */
+    color: #666;
+    /* Subtle grey color */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
