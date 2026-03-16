@@ -1,67 +1,93 @@
 .project-section {
-    padding: 100px 10%;
-    background-color: #fff;
+    padding: 140px 10%;
+    background-color: #F4F1EE;
+    /* Matches the Education section palette */
 }
 
 .project-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    margin-bottom: 80px;
+    font-family: "Noto Serif Display", serif;
+    font-weight: 550;
+    letter-spacing: -0.03em;
+    color: #1a1a1a;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
 }
 
 .project-card {
-    background-color: #3d3d3d;
-    /* Dark grey from your image */
-    padding: 40px;
-    border-radius: 4px;
-    color: #fff;
-    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 0px;
+    /* Sharp edges look more high-end and editorial */
+    color: #1a1a1a;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #fff;
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06);
+    border-color: #8C7E6D;
+    /* Subtle earthy accent on hover */
 }
 
 .project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
 }
 
 .project-card p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #ccc;
-    margin-bottom: 25px;
-    margin-top: 100px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: "Inconsolata", monospace;
+    /* Clean contrast to the heading */
 }
 
 .project-tags {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .project-tags span {
-    border: 1px solid #fff;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.75rem;
+    border: 1px solid #e0e0e0;
+    padding: 6px 18px;
+    border-radius: 100px;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+    color: #888;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-tags span {
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+    background-color: transparent;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 30px;
+        min-height: auto;
+    }
 }

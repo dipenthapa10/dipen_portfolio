@@ -1,7 +1,10 @@
 .contact-section {
     padding: 120px 0;
     background-color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .contact-wrapper {
@@ -40,6 +43,7 @@
     line-height: 1.8;
     color: #555;
     margin-bottom: 30px;
+
 }
 
 .detail-item {

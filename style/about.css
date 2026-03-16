@@ -3,14 +3,14 @@
 
 
 .about-section {
-    background-color: #fff;
+
     padding: 100px 0;
 
     /* We change 'cover' to a specific size (like 40%) and position it to the 'right' */
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)),
         url('../images/me.png');
 
-    background-color: #EFE9E3;
+
 
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -33,6 +33,7 @@
     position: relative;
     z-index: 2;
 
+
 }
 
 /* Left Column Styling */
@@ -47,13 +48,21 @@
     display: flex;
     justify-content: flex-start;
     font-size: 0.85rem;
+
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
 }
 
 .label {
     font-weight: 700;
     letter-spacing: 1.5px;
     width: 120px;
-    color: #333;
+    color: #AEB784;
 }
 
 .value {
@@ -80,17 +89,34 @@
 }
 
 .about-main h2 {
-    font-size: 2.5rem;
+    font-size: 6rem;
     margin-bottom: 30px;
     font-weight: 500;
-    color: #080808;
+    color: #41431B;
+
+    font-family: "Waterfall", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.about-main span {
+    padding-left: 2rem;
+    font-family: "Waterfall", cursive;
 }
 
 .bio-text p {
     line-height: 2;
-    color: #3f3f3f;
+    color: #562F00;
     margin-bottom: 25px;
     font-size: 1rem;
+    /* font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .resume-button {
@@ -108,17 +134,4 @@
 .resume-button:hover {
     background-color: #333;
     color: #fff;
-}
-
-/* Initial state: Hidden and slightly lower */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
-}
-
-/* Final state: Visible and in position */
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
 }

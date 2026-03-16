@@ -53,8 +53,12 @@ body {
     font-weight: 100;
     letter-spacing: 5px;
     margin-bottom: 1rem;
+    /* font-family: "Cormorant Garamond", serif; */
+    font-family: "Bodoni Moda", serif;
+    /* font-family: "Noto Serif Display", serif; */
+    color: #41431B;
 }
 
 .tagline span {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Noto Serif Display", serif;
 }

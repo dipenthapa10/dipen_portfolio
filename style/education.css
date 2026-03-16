@@ -1,6 +1,6 @@
 .edu-bold-aesthetic {
     padding: 120px 10%;
-    background-color: #f4f1ee;
+    background-color: #ffffff;
     /* Matches your signature sand background */
 
     color: #1a1a1a;
@@ -12,15 +12,19 @@
     margin: 0 auto;
 }
 
-/* "Education" Header - Extra Large */
+
 .edu-main-title {
     font-size: 5rem;
     /* Massive section title */
     font-weight: 900;
     letter-spacing: -0.05em;
-    margin: 10px 0 80px 0;
+    margin: 10px 0 60px 0;
     line-height: 0.9;
-
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 .edu-tag {
@@ -31,20 +35,23 @@
 }
 
 .edu-entry {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
     padding-top: 40px;
 }
 
 /* School Name - Bigger focal point */
 .school-name-big {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     /* Larger than the degree */
     font-weight: 800;
     letter-spacing: -0.04em;
     margin-bottom: 10px;
     color: #1a1a1a;
-    font-family: "Indie Flower", cursive;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .degree-row {
@@ -59,7 +66,13 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: #8c7e6d;
-    /* Muted accent color */
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
 }
 
 .edu-year {
@@ -72,7 +85,13 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #444;
-    max-width: 700px;
+    max-width: 800px;
+
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
 }
 
 /* Responsive Scaling */
@@ -90,4 +109,69 @@
         align-items: flex-start;
         gap: 5px;
     }
+}
+
+
+/* Update the section background to a light sand/grey so the white cards pop */
+.edu-bold-aesthetic {
+    padding: 120px 10%;
+    background-color: #f8f7f5;
+    /* Light aesthetic sand */
+    color: #1a1a1a;
+    font-family: "Inconsolata", monospace;
+}
+
+.edu-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* TURN THE ENTRY INTO A CARD */
+.edu-entry {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    /* White card */
+    padding: 40px;
+    border-radius: 20px;
+    /* Modern rounded corners */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    /* Very subtle border */
+
+    /* This makes the hover look smooth */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+/* THE HOVER EFFECT */
+.edu-entry:hover {
+    transform: translateY(-10px);
+    /* Lifts up */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    /* Adds a deep soft shadow */
+    border-color: rgba(0, 0, 0, 0.1);
+    /* Darkens border slightly */
+    cursor: pointer;
+}
+
+/* KEEP YOUR TYPOGRAPHY AS IS */
+.edu-main-title {
+    font-size: 5rem;
+    font-weight: 550;
+    line-height: 0.9;
+    font-family: "Noto Serif Display", serif;
+    margin-bottom: 60px;
+    color: #41431B;
+}
+
+.school-name-big {
+    font-size: 2.5rem;
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 10px;
+    color: #AEB784;
+}
+
+/* Smooth transition for the degree name color on hover */
+.edu-entry:hover .degree-name-small {
+    color: #1a1a1a;
+    transition: 0.3s;
 }

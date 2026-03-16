@@ -7,3 +7,4 @@ window.addEventListener('scroll', () => {
         navContainer.classList.remove('scrolled');
     }
 });
+
