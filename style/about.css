@@ -7,19 +7,13 @@
     padding: 100px 0;
 
     /* We change 'cover' to a specific size (like 40%) and position it to the 'right' */
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)),
-        url('../images/me.png');
-
-
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('../images/dipen-bg.png');
 
     background-repeat: no-repeat;
     background-position: right bottom;
-
     background-size: contain;
-
     background-attachment: scroll;
-
-
     position: relative;
 }
 

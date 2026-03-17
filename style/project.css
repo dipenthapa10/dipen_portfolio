@@ -1,52 +1,49 @@
 .project-section {
-    padding: 100px 10%;
-    background-color: #F4F1EE;
-    /* Matches the Education section palette */
+    padding: 120px 10%;
+    background-color: #f8f7f5;
+    /* Match the Education section background */
 }
 
-.project-section h2 {
-    /* font-size: clamp(3.5rem, 8vw, 6rem); */
-    font-size: 5rem;
-    margin-bottom: 80px;
-    font-family: "Noto Serif Display", serif;
-    font-weight: 550;
-    letter-spacing: -0.03em;
-    color: #1a1a1a;
-
+/* Use the container to match the max-width of Education */
+.project-section .edu-container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .project-card {
     background-color: #ffffff;
-    padding: 50px;
-    border-radius: 0px;
-    /* Sharp edges look more high-end and editorial */
+    padding: 40px;
+    border-radius: 20px;
+    /* Rounded like your Education cards */
     color: #1a1a1a;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 400px;
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    min-height: 350px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06);
-    border-color: #8C7E6D;
-    /* Subtle earthy accent on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
     font-size: 2.2rem;
-    margin-bottom: 20px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
+    color: #AEB784;
+    /* Matches your Education school names color */
 }
 
 .project-card p {
@@ -63,6 +60,35 @@
     gap: 12px;
     flex-wrap: wrap;
     margin-top: auto;
+}
+
+/* This makes the "ACADEMIC JOURNEY" and "MY WORK" look identical */
+.edu-tag {
+    font-family: "Inconsolata", monospace !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.4em !important;
+    text-transform: uppercase !important;
+    color: #a8a096 !important;
+    font-weight: 600 !important;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Ensure the header spacing is consistent in both sections */
+.edu-header {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+/* Ensure the big titles "Education" and "Projects" match exactly */
+.edu-main-title {
+    font-size: 5rem;
+    font-family: "Noto Serif Display", serif;
+    font-weight: 550;
+    line-height: 0.9;
+    color: #41431B;
+    margin: 10px 0 0 0;
+    letter-spacing: -0.05em;
 }
 
 .project-tags span {
@@ -109,11 +135,4 @@
 /* 4. "Dipen Thapa" appears half a second later */
 .reveal-2 {
     animation-delay: 0.8s;
-}
-
-/* Optional: Make the tagline appear last */
-.tagline {
-    opacity: 0;
-    animation: fadeInUp 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-    animation-delay: 1.3s;
 }

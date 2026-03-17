@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="style/hero.css">
     <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/lens.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -50,15 +51,9 @@
         rel="stylesheet">
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Waterfall&display=swap"
-        rel="stylesheet">
-
-    <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Waterfall&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Waterfall&display=swap"
-        rel="stylesheet">
+
 
 
 
@@ -77,22 +72,11 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#lens">LENS</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- <header id="home" class="home">
-        <div class="home-content">
-            <p class="greeting">NAMASTE, HELLO I AM</p>
-            <h1 class="name ">Dipen Thapa</h1>
-            <p class="tagline">
-                <span>Student</span>
-                <span>Happy</span>
-                <span>Learning</span>
-                </span>
-            </p>
-        </div>
-    </header> -->
 
     <header id="home" class="home">
         <div class="home-content">
@@ -206,35 +190,71 @@
     </section>
 
     <section id="projects" class="project-section">
-        <h2>Projects</h2>
-        <div class="project-grid reveal-1">
-            <div class="project-card reveal-2 ">
-                <h3>Personal Website</h3>
-                <p> I built this website for my personal portfolio c</p>
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Javascript</span>
+        <div class="edu-container">
+            <header class="edu-header">
+                <span class="edu-tag">MY WORK</span>
+                <h2 class="edu-main-title">Projects</h2>
+            </header>
+
+            <div class="project-grid">
+                <div class="project-card scroll-reveal">
+                    <h3>Personal Website</h3>
+                    <p>I built this website for my personal portfolio using HTML, CSS, and Javascript.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                    </div>
                 </div>
-            </div>
-            <div class="project-card reveal-2">
-                <h3>Kakshya</h3>
-                <p> I built Kakshya, a web-based course management system for my Database Systems class. The project
-                    allows administrators,
-                    instructors, and students to manage courses, sections, and grades through a clean web interface.</p>
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Flask</span>
+                <div class="project-card scroll-reveal">
+                    <h3>Kakshya</h3>
+                    <p>I built Kakshya, a web-based course management system for my Database Systems class.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Flask</span>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
 
+    <section id="lens" class="lens-section scroll-reveal">
+        <div class="lens-container">
+            <header class="lens-header">
+                <span class="edu-tag">VISUAL DIARY</span>
+                <h2 class="lens-title">Lens</h2>
+            </header>
+
+            <div class="lens-track">
+                <div class="lens-item">
+                    <img src="lens/dipen.jpg" alt="Dipen Photography">
+                    <div class="lens-caption">Me</div>
+                </div>
+                <div class="lens-item">
+                    <img src="lens/fam.jpg" alt="Kent State Life">
+                    <div class="lens-caption">My Siblings</div>
+                </div>
+                <div class="lens-item">
+                    <img src="lens/friends.jpg" alt="Travels">
+                    <div class="lens-caption">Friends</div>
+                </div>
+                <div class="lens-item">
+                    <img src="lens/heartt.jpg" alt="Sports">
+                    <div class="lens-caption">My Best Friend</div>
+                </div>
+
+                <div class="lens-item">
+                    <img src="lens/football.jpg" alt="Sports">
+                    <div class="lens-caption">Playing Football</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contact" class="contact-section">
         <div class="contact-wrapper">
             <div class="contact-header">
+                <span class="edu-tag">LET'S CONNECT</span>
                 <h2 class="aesthetic-title">Get in Touch</h2>
                 <div class="divider"></div>
             </div>
@@ -246,21 +266,21 @@
                         Let's create something meaningful together.
                     </p>
                     <div class="contact-details">
-                        <a href="mailto:your.email@kent.edu" class="detail-item">dthapa4@kent.edu <br>
-                            idipen10@gmail.com</a>
-
+                        <a href="mailto:dthapa4@kent.edu" class="detail-item">dthapa4@kent.edu</a>
+                        <br>
+                        <a href="mailto:idipen10@gmail.com" class="detail-item">idipen10@gmail.com</a>
                     </div>
                 </div>
 
                 <form class="aesthetic-form" action="https://formspree.io/f/your-id" method="POST">
                     <div class="input-container">
-                        <input type="text" name="name" required placeholder="Name">
+                        <input type="text" name="name" required placeholder="NAME">
                     </div>
                     <div class="input-container">
-                        <input type="email" name="email" required placeholder="Email Address">
+                        <input type="email" name="email" required placeholder="EMAIL ADDRESS">
                     </div>
                     <div class="input-container">
-                        <textarea name="message" rows="4" required placeholder="Your Message"></textarea>
+                        <textarea name="message" rows="4" required placeholder="YOUR MESSAGE"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
