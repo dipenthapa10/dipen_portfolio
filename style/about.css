@@ -258,3 +258,41 @@
 @media (prefers-reduced-motion: reduce) {
     .about-photo { transition: none; }
 }
+
+/* Final desktop split: heading and intro left, details right */
+@media (min-width: 901px) {
+    #about .about-container {
+        display: grid;
+        grid-template-columns: minmax(360px, .9fr) minmax(520px, 1.1fr);
+        column-gap: clamp(70px, 8vw, 130px);
+        align-items: start;
+    }
+
+    #about .about-heading {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 90px 0 0;
+    }
+
+    #about .about-heading .about-lead {
+        max-width: 440px;
+        margin: 42px 0 0;
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.45rem, 2.3vw, 2.2rem);
+        font-weight: 400;
+        line-height: 1.28;
+        letter-spacing: normal;
+    }
+
+    #about .about-story {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        max-width: none;
+        padding: 90px 0 0;
+    }
+
+    #about .bio-text {
+        max-width: 650px;
+    }
+}
