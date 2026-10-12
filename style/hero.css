@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 html,
@@ -11,72 +11,151 @@ body {
 }
 
 body {
-
-    background-color: #F9F8F6;
-    color: #333;
-
+    background: #f3efe5;
+    color: #161815;
 }
 
-.home {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.portfolio-hero {
+    --paper: #f3efe5;
+    --ink: #161815;
+    --navy: #183e56;
+    min-height: 100svh;
     position: relative;
     overflow: hidden;
-
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.037)), url('../images/lake-bg.jpg');
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /* background-color: #EFE9E3; */
-
+    isolation: isolate;
+    padding: 102px 5vw 42px;
+    background: var(--paper);
+    border-bottom: 0;
 }
 
-
-.home-content {
-    z-index: 2;
-
+.hero-topline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    font-family: "Inconsolata", monospace;
+    font-size: .62rem;
+    font-weight: 600;
+    letter-spacing: .12em;
 }
 
-.greeting {
-    letter-spacing: 3px;
-    font-size: 30rerm;
-    color: #888;
-    margin-bottom: 1rem;
+.hero-topline span:first-child::before {
+    content: "✦";
+    color: var(--navy);
+    font-size: 1rem;
+    margin-right: 12px;
 }
 
-/* .name {
-    font-size: 7rem;
-    font-weight: 100;
-    letter-spacing: 5px;
-    margin-bottom: 1rem;
-    
-    font-family: "Bodoni Moda", serif;
-    
-    color: #41431B;
-} */
-
-.name {
-    font-size: 7rem;
-    font-weight: 100;
-    letter-spacing: 5px;
-    font-family: "Bodoni Moda", serif;
-    /* Extra aesthetic polish */
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.hero-masthead {
+    position: relative;
+    z-index: 1;
+    margin-top: 2.2vh;
+    color: var(--ink);
+    font-family: "Noto Serif Display", "Times New Roman", serif;
+    font-size: clamp(6rem, 15vw, 16.5rem);
+    font-weight: 600;
+    font-style: italic;
+    line-height: .76;
+    letter-spacing: -.065em;
+    white-space: nowrap;
 }
 
-.tagline span {
+.hero-intro {
+    position: absolute;
+    left: 8vw;
+    bottom: 7vh;
+    z-index: 5;
+    width: min(29vw, 370px);
+}
+
+.hero-hello,
+.hero-role {
+    font-family: "Inconsolata", monospace;
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+}
+
+.hero-intro h2 {
+    margin: 10px 0 12px;
+    color: var(--ink);
     font-family: "Noto Serif Display", serif;
+    font-size: clamp(3.4rem, 6vw, 6.6rem);
+    font-weight: 500;
+    line-height: .78;
+    letter-spacing: -.06em;
 }
 
-/* 1. Define the entrance animation */
+.hero-role {
+    color: var(--navy);
+}
+
+.hero-summary {
+    max-width: 325px;
+    margin-top: 16px;
+    font-family: "Playfair Display", serif;
+    font-size: .85rem;
+    line-height: 1.55;
+}
+
+.hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 34px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--ink);
+    color: var(--ink);
+    font-family: "Inconsolata", monospace;
+    font-size: .64rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero-link span {
+    color: var(--navy);
+    font-size: 1rem;
+}
+
+.hero-person {
+    position: absolute;
+    left: 75%;
+    bottom: -10%;
+    z-index: 3;
+    width: min(64vw, 920px);
+    height: 99%;
+    object-fit: contain;
+    object-position: bottom center;
+    transform: translateX(-50%) scale(1.05);
+    transform-origin: bottom center;
+}
+
+.hero-side {
+    position: absolute;
+    z-index: 5;
+    top: 49%;
+    font-family: "Inconsolata", monospace;
+    font-size: .55rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    writing-mode: vertical-rl;
+}
+
+.hero-side-left {
+    left: 2.1vw;
+    transform: rotate(180deg);
+}
+
+.hero-side-right {
+    right: 2.1vw;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(24px);
     }
 
     to {
@@ -85,27 +164,112 @@ body {
     }
 }
 
-
 .reveal-1,
 .reveal-2 {
     opacity: 0;
-    /* Hidden before animation starts */
-    animation: fadeInUp 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    animation: fadeInUp 1s cubic-bezier(.2, .7, .2, 1) forwards;
 }
 
-/* 3. The "Welcome" appears immediately */
 .reveal-1 {
-    animation-delay: 0.3s;
+    animation-delay: .1s;
 }
 
-/* 4. "Dipen Thapa" appears half a second later */
 .reveal-2 {
-    animation-delay: 0.8s;
+    animation-delay: .35s;
 }
 
-/* Optional: Make the tagline appear last */
-.tagline {
-    opacity: 0;
-    animation: fadeInUp 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-    animation-delay: 1.3s;
+@media (max-width: 900px) {
+    .portfolio-hero {
+        min-height: 920px;
+        padding-inline: 6vw;
+    }
+
+    .hero-masthead {
+        margin-top: 4vh;
+        font-size: 15vw;
+    }
+
+    .hero-person {
+        left: 73%;
+        width: min(82vw, 740px);
+        height: 84%;
+    }
+
+    .hero-intro {
+        left: 7vw;
+        bottom: 6vh;
+        width: 40vw;
+    }
+
+    .hero-intro h2 {
+        font-size: 8vw;
+    }
+
+    .hero-summary {
+        font-size: .78rem;
+    }
+
+    .hero-side {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-hero {
+        min-height: 820px;
+        padding-top: 96px;
+    }
+
+    .hero-topline {
+        font-size: .49rem;
+    }
+
+    .hero-topline span:last-child {
+        display: none;
+    }
+
+    .hero-masthead {
+        margin-top: 5vh;
+        font-size: 16vw;
+    }
+
+    .hero-person {
+        left: 75%;
+        bottom: 0;
+        width: 112vw;
+        height: 73%;
+        opacity: .98;
+    }
+
+    .hero-intro {
+        left: 7vw;
+        bottom: 5vh;
+        width: 55vw;
+    }
+
+    .hero-intro h2 {
+        font-size: 12.5vw;
+    }
+
+    .hero-summary {
+        max-width: 210px;
+        font-size: .7rem;
+    }
+
+    .hero-link {
+        gap: 18px;
+        font-size: .55rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .reveal-1,
+    .reveal-2 {
+        opacity: 1;
+        animation: none;
+    }
 }

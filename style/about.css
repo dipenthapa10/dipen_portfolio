@@ -1,131 +1,260 @@
-/* about section  */
-
-
-
 .about-section {
-
-    padding: 100px 0;
-
-    /* We change 'cover' to a specific size (like 40%) and position it to the 'right' */
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url('../images/dipen-bg.png');
-
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: contain;
-    background-attachment: scroll;
+    --about-paper: #fffdf7;
+    --about-ink: #161815;
+    --about-blue: #d9ddcf;
+    --about-accent: #183e56;
     position: relative;
+    z-index: 10;
+    margin-top: 0;
+    padding: 0 5vw 120px;
+    overflow: hidden;
+    border-radius: 0;
+    background: var(--about-blue);
+    color: var(--about-ink);
 }
 
 .about-container {
-    max-width: 1100px;
+    max-width: 1320px;
     margin: 0 auto;
-    display: flex;
-    gap: 100px;
-
-    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr;
     position: relative;
-    z-index: 2;
-
-
 }
 
-/* Left Column Styling */
-.about-sidebar {
-    flex: 1;
-    min-width: 250px;
+.about-heading {
+    grid-column: 1 / -1;
+    padding: 85px 0 55px;
+    border-bottom: 0;
 }
 
-.info-item {
-    border-bottom: 1px solid #eeeeee;
-    padding: 20px 0;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 0.85rem;
-
-    font-family: "Fraunces", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings:
-        "SOFT" 0,
-        "WONK" 0;
+.about-heading p {
+    margin-bottom: 18px;
+    font-family: "Inconsolata", monospace;
+    font-size: .65rem;
+    letter-spacing: .15em;
 }
 
-.label {
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    width: 120px;
-    color: #AEB784;
+.about-heading h2 {
+    font-family: "Noto Serif Display", serif;
+    font-size: clamp(4.8rem, 10vw, 10.5rem);
+    font-weight: 450;
+    line-height: .72;
+    letter-spacing: -.07em;
 }
 
-.value {
-    color: #888;
-    font-size: 17px;
+.about-heading h2 em {
+    color: var(--about-accent);
+    font-weight: 350;
 }
 
-.social-links {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
+.about-story {
+    width: min(100%, 760px);
+    padding-top: 70px;
 }
 
-.social-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 0.9rem;
+.about-lead {
+    max-width: 500px;
+    margin-bottom: 34px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.45rem, 2.3vw, 2.2rem);
+    line-height: 1.28;
 }
 
-/* Right Column Styling */
-.about-main {
-    flex: 2;
+.about-lead::first-letter {
+    float: left;
+    margin: 7px 10px 0 0;
+    color: var(--about-accent);
+    font-family: "Noto Serif Display", serif;
+    font-size: 4.6rem;
+    line-height: .72;
 }
 
-.about-main h2 {
-    font-size: 6rem;
-    margin-bottom: 30px;
-    font-weight: 500;
-    color: #41431B;
-
-    font-family: "Waterfall", cursive;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.about-main span {
-    padding-left: 2rem;
-    font-family: "Waterfall", cursive;
+.bio-text {
+    max-width: 540px;
 }
 
 .bio-text p {
-    line-height: 2;
-    color: #562F00;
-    margin-bottom: 25px;
-    font-size: 1rem;
-    /* font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal; */
+    margin-bottom: 20px;
+    color: rgba(22, 24, 21, .72);
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.about-details {
+    margin-top: 42px;
+    border-top: 1px solid rgba(22, 24, 21, .2);
+}
+
+.about-details div {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(22, 24, 21, .2);
+}
+
+.about-details span {
+    color: var(--about-accent);
+    font-family: "Inconsolata", monospace;
+    font-size: .56rem;
+    letter-spacing: .12em;
+}
+
+.about-details strong {
+    font-family: "Playfair Display", serif;
+    font-size: .88rem;
+    font-weight: 400;
+}
+
+.about-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 34px;
 }
 
 .resume-button {
     display: inline-block;
-    margin-top: 70px;
-    padding: 15px 35px;
-    border: 1px solid #333;
+    padding: 13px 18px;
+    border: 1px solid rgba(22, 24, 21, .8);
+    color: var(--about-ink);
+    font-family: "Inconsolata", monospace;
+    font-size: .62rem;
+    letter-spacing: .12em;
     text-decoration: none;
-    color: #333;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
+    transition: .25s ease;
 }
 
 .resume-button:hover {
-    background-color: #333;
-    color: #fff;
+    background: var(--about-ink);
+    color: var(--about-paper);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--about-ink);
+    font-family: "Inconsolata", monospace;
+    font-size: .65rem;
+    letter-spacing: .08em;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--about-accent);
+}
+
+.about-collage {
+    min-height: 820px;
+    position: relative;
+    margin-top: 45px;
+}
+
+.about-photo {
+    position: absolute;
+    padding: 8px 8px 28px;
+    background: var(--about-paper);
+    box-shadow: 0 16px 38px rgba(4, 16, 25, .32);
+    transition: transform .45s cubic-bezier(.2, .8, .2, 1);
+}
+
+.about-photo:hover {
+    z-index: 8;
+    transform: rotate(0) scale(1.03);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.74) contrast(1.04);
+}
+
+.about-photo figcaption {
+    padding-top: 7px;
+    color: #15232d;
+    font-family: "Inconsolata", monospace;
+    font-size: .52rem;
+    letter-spacing: .1em;
+}
+
+.about-photo-one {
+    width: 48%;
+    height: 56%;
+    left: 2%;
+    top: 7%;
+    transform: rotate(-4deg);
+    z-index: 3;
+}
+
+.about-photo-two {
+    width: 45%;
+    height: 52%;
+    right: 0;
+    top: 0;
+    transform: rotate(4deg);
+    z-index: 2;
+}
+
+.about-photo-three {
+    width: 42%;
+    height: 46%;
+    left: 10%;
+    bottom: 0;
+    transform: rotate(3deg);
+    z-index: 4;
+}
+
+.about-photo-four {
+    width: 40%;
+    height: 43%;
+    right: 5%;
+    bottom: 2%;
+    transform: rotate(-5deg);
+    z-index: 5;
+}
+
+.collage-note {
+    position: absolute;
+    right: 32%;
+    top: 48%;
+    z-index: 7;
+    padding: 9px 13px;
+    background: var(--about-accent);
+    color: var(--about-paper);
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1rem;
+    line-height: 1.05;
+    transform: rotate(-6deg);
+}
+
+@media (max-width: 900px) {
+    .about-container { grid-template-columns: 1fr; }
+    .about-heading { padding-top: 65px; }
+    .about-story { max-width: 650px; }
+    .about-collage { min-height: 780px; margin-top: 70px; }
+}
+
+@media (max-width: 600px) {
+    .about-section { margin-top: 0; padding-inline: 6vw; border-radius: 0; }
+    .about-heading { padding: 55px 0 40px; }
+    .about-heading h2 { font-size: 17vw; line-height: .78; }
+    .about-story { padding-top: 48px; }
+    .about-actions { align-items: flex-start; flex-direction: column; }
+    .about-collage { min-height: 620px; margin-top: 55px; }
+    .about-photo { padding: 6px 6px 23px; }
+    .about-photo-one { width: 57%; height: 48%; left: -2%; }
+    .about-photo-two { width: 52%; height: 45%; right: -3%; top: 4%; }
+    .about-photo-three { width: 51%; height: 43%; left: 1%; }
+    .about-photo-four { width: 49%; height: 42%; right: 0; }
+    .collage-note { right: 28%; top: 47%; font-size: .82rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-photo { transition: none; }
 }

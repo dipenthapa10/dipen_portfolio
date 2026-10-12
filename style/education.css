@@ -1,177 +1,378 @@
 .edu-bold-aesthetic {
-    padding: 120px 10%;
-    background-color: #ffffff;
-    /* Matches your signature sand background */
-
-    color: #1a1a1a;
-    font-family: "Inconsolata", monospace;
+    --edu-bg: #e5dcb4;
+    --edu-paper: #30382f;
+    --edu-sage: #d9ddcf;
+    --edu-blue: #775548;
+    overflow: hidden;
+    background: var(--edu-bg);
+    color: var(--edu-paper);
 }
 
-.edu-container {
-    max-width: 1100px;
+.edu-bold-aesthetic .edu-container {
+    max-width: 1320px;
     margin: 0 auto;
+    padding: 125px 5vw 130px;
 }
 
-
-.edu-main-title {
-    font-size: 5rem;
-    /* Massive section title */
-    font-weight: 900;
-    letter-spacing: -0.05em;
-    margin: 10px 0 60px 0;
-    line-height: 0.9;
-    font-family: "Noto Serif Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 550;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+.edu-bold-aesthetic .edu-header {
+    display: grid;
+    grid-template-columns: 1.5fr .55fr;
+    column-gap: 8vw;
+    align-items: end;
+    padding-bottom: 75px;
 }
 
-.edu-tag {
-    font-size: 0.8rem;
-    letter-spacing: 0.5em;
-    color: #a8a096;
+.edu-bold-aesthetic .edu-tag {
+    grid-column: 1 / -1;
+    display: block;
+    margin-bottom: 24px;
+    color: var(--edu-blue) !important;
+    font-family: "Inconsolata", monospace !important;
+    font-size: .63rem !important;
+    font-weight: 600 !important;
+    letter-spacing: .16em !important;
+}
+
+.edu-bold-aesthetic .edu-main-title {
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(5rem, 10vw, 10rem);
     font-weight: 600;
+    line-height: .72;
+    letter-spacing: -.06em;
 }
 
-.edu-entry {
-    margin-bottom: 70px;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-    padding-top: 40px;
+.edu-bold-aesthetic .edu-main-title em {
+    color: var(--edu-blue);
+    font-weight: 350;
 }
 
-/* School Name - Bigger focal point */
-.school-name-big {
-    font-size: 2.5rem;
-    /* Larger than the degree */
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    margin-bottom: 10px;
-    color: #1a1a1a;
-    font-family: "Cormorant Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.degree-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-/* Degree - Smaller than school name */
-.degree-name-small {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #8c7e6d;
-    font-family: "Fraunces", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-        "SOFT" 0,
-        "WONK" 0;
-}
-
-.edu-year {
-    font-size: 1.1rem;
-    color: #a8a096;
-    font-weight: 500;
-}
-
-.edu-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444;
-    max-width: 800px;
-
-
+.edu-bold-aesthetic .edu-intro {
+    max-width: 310px;
+    padding-bottom: 6px;
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.55;
 }
 
-/* Responsive Scaling */
-@media (max-width: 768px) {
-    .edu-main-title {
-        font-size: 3.5rem;
-    }
-
-    .school-name-big {
-        font-size: 2.2rem;
-    }
-
-    .degree-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
+.edu-bold-aesthetic .edu-list {
+    border-bottom: 1px solid rgba(48, 56, 47, .24);
 }
 
-
-/* Update the section background to a light sand/grey so the white cards pop */
-.edu-bold-aesthetic {
-    padding: 120px 10%;
-    background-color: #f8f7f5;
-    /* Light aesthetic sand */
-    color: #1a1a1a;
-    font-family: "Inconsolata", monospace;
-}
-
-.edu-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* TURN THE ENTRY INTO A CARD */
-.edu-entry {
-    margin-bottom: 40px;
-    background-color: #ffffff;
-    /* White card */
-    padding: 40px;
-    border-radius: 20px;
-    /* Modern rounded corners */
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    /* Very subtle border */
-
-    /* This makes the hover look smooth */
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-}
-
-/* THE HOVER EFFECT */
-.edu-entry:hover {
-    transform: translateY(-10px);
-    /* Lifts up */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-    /* Adds a deep soft shadow */
-    border-color: rgba(0, 0, 0, 0.1);
-    /* Darkens border slightly */
+.edu-bold-aesthetic .edu-entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) auto 150px;
+    gap: 28px;
+    align-items: start;
+    padding: 32px 0;
+    border-top: 1px solid rgba(48, 56, 47, .24);
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
     cursor: pointer;
+    transition: padding .45s cubic-bezier(.2, .8, .2, 1), background .45s ease;
 }
 
-/* KEEP YOUR TYPOGRAPHY AS IS */
-.edu-main-title {
-    font-size: 5rem;
-    font-weight: 550;
-    line-height: 0.9;
-    font-family: "Noto Serif Display", serif;
-    margin-bottom: 60px;
-    color: #41431B;
+.edu-bold-aesthetic .edu-entry:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 6px;
 }
 
-.school-name-big {
-    font-size: 2.5rem;
-    font-family: "Cormorant Garamond", serif;
-    margin-bottom: 10px;
-    color: #AEB784;
+.edu-bold-aesthetic .edu-entry::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: var(--edu-blue);
+    transition: width .6s cubic-bezier(.2, .8, .2, 1);
 }
 
-/* Smooth transition for the degree name color on hover */
-.edu-entry:hover .degree-name-small {
-    color: #1a1a1a;
-    transition: 0.3s;
+.edu-bold-aesthetic .edu-entry::after {
+    content: "↗";
+    position: absolute;
+    right: 16px;
+    bottom: 18px;
+    color: var(--edu-blue);
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translate(-12px, 12px);
+    transition: opacity .35s ease, transform .45s cubic-bezier(.2, .8, .2, 1);
+}
+
+.edu-bold-aesthetic .edu-entry:hover {
+    padding-left: 18px;
+    padding-right: 18px;
+    background: rgba(119, 85, 72, .07);
+}
+
+.edu-bold-aesthetic .edu-entry:hover::before {
+    width: 100%;
+}
+
+.edu-bold-aesthetic .edu-entry:hover::after {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.edu-bold-aesthetic .edu-entry-main {
+    transition: transform .45s cubic-bezier(.2, .8, .2, 1);
+}
+
+.edu-bold-aesthetic .edu-entry:hover .edu-entry-main {
+    transform: translateX(10px);
+}
+
+.edu-bold-aesthetic .edu-number,
+.edu-bold-aesthetic .edu-year {
+    font-family: "Inconsolata", monospace;
+    font-size: .62rem;
+    letter-spacing: .1em;
+}
+
+.edu-bold-aesthetic .edu-logo {
+    width: 140px;
+    height: 72px;
+    align-self: center;
+    justify-self: end;
+    object-fit: contain;
+    object-position: center right;
+}
+
+.edu-bold-aesthetic .daffodil-logo {
+    width: 76px;
+    height: 76px;
+}
+
+.edu-bold-aesthetic .edu-number {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    margin-top: -5px;
+    border: 1px solid rgba(119, 85, 72, .62);
+    border-radius: 50%;
+    color: var(--edu-blue);
+    transition: color .35s ease, background .35s ease, transform .45s ease;
+}
+
+.edu-bold-aesthetic .edu-entry:hover .edu-number {
+    background: var(--edu-blue);
+    color: var(--edu-bg);
+    transform: rotate(12deg);
+}
+
+.edu-bold-aesthetic .edu-year {
+    padding-top: 8px;
+    color: rgba(48, 56, 47, .68);
+    white-space: nowrap;
+}
+
+.edu-bold-aesthetic .school-name-big {
+    margin: 0 0 6px;
+    font-family: "Noto Serif Display", "Times New Roman", serif;
+    font-size: clamp(2rem, 4.4vw, 4.7rem);
+    font-weight: 520;
+    line-height: .95;
+    letter-spacing: -.045em;
+}
+
+.edu-bold-aesthetic .degree-name-small {
+    display: block;
+    margin-top: 10px;
+    color: var(--edu-blue);
+    font-family: "Noto Serif Display", "Times New Roman", serif;
+    font-size: 1.08rem;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .01em;
+    text-transform: none;
+}
+
+.edu-bold-aesthetic .edu-description {
+    max-width: 760px;
+    margin-top: 18px;
+    color: rgba(48, 56, 47, .72);
+    font-family: "Playfair Display", serif;
+    font-size: .85rem;
+    line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+    .edu-bold-aesthetic .edu-container { padding: 90px 6vw 100px; }
+    .edu-bold-aesthetic .edu-header { grid-template-columns: 1fr; gap: 34px; padding-bottom: 55px; }
+    .edu-bold-aesthetic .edu-tag { grid-column: 1; }
+    .edu-bold-aesthetic .edu-main-title { font-size: 18vw; }
+    .edu-bold-aesthetic .edu-entry { grid-template-columns: 32px 1fr; gap: 14px; }
+    .edu-bold-aesthetic .edu-year { grid-column: 2; grid-row: 2; padding-top: 0; }
+    .edu-bold-aesthetic .edu-entry-main { grid-column: 2; }
+    .edu-bold-aesthetic .edu-logo { grid-column: 2; width: 120px; height: 58px; justify-self: start; margin-top: 8px; }
+    .edu-bold-aesthetic .daffodil-logo { width: 64px; height: 64px; }
+    .edu-bold-aesthetic .school-name-big { font-size: 9vw; }
+    .edu-bold-aesthetic .degree-name-small { font-size: .98rem; }
+    .edu-bold-aesthetic .edu-description { font-size: .78rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .edu-bold-aesthetic .edu-entry,
+    .edu-bold-aesthetic .edu-entry::before,
+    .edu-bold-aesthetic .edu-entry::after,
+    .edu-bold-aesthetic .edu-entry-main,
+    .edu-bold-aesthetic .edu-number { transition: none; }
+}
+
+/* Horizontal editorial timeline */
+.edu-bold-aesthetic .edu-entry {
+    min-height: 150px;
+    grid-template-columns: minmax(0, 1fr) 150px 128px;
+    align-items: center;
+    padding-block: 36px;
+}
+
+.edu-bold-aesthetic .edu-entry:nth-child(even) {
+    padding-left: 0;
+}
+
+.edu-bold-aesthetic .edu-year {
+    padding-top: 0;
+    align-self: center;
+}
+
+.edu-bold-aesthetic .edu-logo {
+    width: 112px;
+    height: 72px;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, .92);
+    object-position: center;
+    filter: saturate(.8);
+    transition: transform .45s cubic-bezier(.16, 1, .3, 1), border-radius .45s ease;
+}
+
+.edu-bold-aesthetic .daffodil-logo {
+    width: 72px;
+    height: 72px;
+    padding: 10px;
+}
+
+.edu-bold-aesthetic .edu-entry:hover .edu-logo {
+    border-radius: 18px;
+    transform: translateX(-8px) rotate(-2deg);
+}
+
+.edu-bold-aesthetic .edu-entry:nth-child(even):hover .edu-logo {
+    transform: translateX(-8px) rotate(2deg);
+}
+
+.js .edu-entry.scroll-reveal {
+    opacity: 0;
+    transform: translateX(-46px);
+}
+
+.js .edu-entry.scroll-reveal:nth-child(even) {
+    transform: translateX(46px);
+}
+
+.js .edu-entry.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity .72s ease, transform .9s cubic-bezier(.16, 1, .3, 1), padding .45s cubic-bezier(.2, .8, .2, 1), background .45s ease;
+}
+
+.js .edu-entry.scroll-reveal:nth-child(2) { transition-delay: .08s; }
+.js .edu-entry.scroll-reveal:nth-child(3) { transition-delay: .16s; }
+
+@media (max-width: 760px) {
+    .edu-bold-aesthetic .edu-entry,
+    .edu-bold-aesthetic .edu-entry:nth-child(even) {
+        grid-template-columns: 1fr;
+        min-height: 0;
+        padding: 30px 0;
+    }
+    .edu-bold-aesthetic .edu-entry-main,
+    .edu-bold-aesthetic .edu-year,
+    .edu-bold-aesthetic .edu-logo { grid-column: 1; }
+    .edu-bold-aesthetic .edu-year { grid-row: auto; }
+    .edu-bold-aesthetic .edu-logo { width: 105px; height: 62px; justify-self: start; }
+    .edu-bold-aesthetic .daffodil-logo { width: 62px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js .edu-entry.scroll-reveal,
+    .js .edu-entry.scroll-reveal:nth-child(even) { opacity: 1; transform: none; transition: none; }
+}
+
+/* Two-column editorial education layout */
+@media (min-width: 901px) {
+    .edu-bold-aesthetic .edu-container {
+        display: grid;
+        grid-template-columns: minmax(320px, .82fr) minmax(560px, 1.18fr);
+        gap: clamp(70px, 9vw, 150px);
+        align-items: start;
+    }
+
+    .edu-bold-aesthetic .edu-header {
+        display: block;
+        position: sticky;
+        top: 145px;
+        padding: 0;
+    }
+
+    .edu-bold-aesthetic .edu-tag {
+        margin-bottom: 76px;
+    }
+
+    .edu-bold-aesthetic .edu-main-title {
+        margin-bottom: 28px;
+        font-size: clamp(4.5rem, 7vw, 7.5rem);
+        line-height: .82;
+    }
+
+    .edu-bold-aesthetic .edu-intro {
+        max-width: 390px;
+        font-size: 1.05rem;
+    }
+
+    .edu-bold-aesthetic .edu-list {
+        margin-top: 78px;
+        border-top: 1px solid rgba(48, 56, 47, .24);
+    }
+
+    .edu-bold-aesthetic .edu-entry {
+        grid-template-columns: minmax(0, 1fr) 112px 96px;
+        gap: 22px;
+        min-height: 175px;
+        padding: 34px 0;
+        border-top: 0;
+        border-bottom: 1px solid rgba(48, 56, 47, .24);
+    }
+
+    .edu-bold-aesthetic .school-name-big {
+        font-size: clamp(1.8rem, 2.35vw, 3rem);
+        line-height: 1;
+    }
+
+    .edu-bold-aesthetic .degree-name-small {
+        margin-top: 12px;
+        font-size: .95rem;
+    }
+
+    .edu-bold-aesthetic .edu-logo {
+        width: 90px;
+        height: 62px;
+        padding: 10px 12px;
+    }
+
+    .edu-bold-aesthetic .daffodil-logo {
+        width: 62px;
+        height: 62px;
+    }
+}
+
+@media (max-width: 900px) {
+    .edu-bold-aesthetic .edu-container {
+        display: block;
+    }
 }

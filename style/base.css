@@ -1,0 +1,620 @@
+:root {
+    --site-background: #f3efe5;
+}
+
+body,
+.portfolio-hero,
+.about-section,
+.edu-bold-aesthetic,
+.resume-section,
+.project-section,
+.lens-section,
+.contact-section {
+    background-color: var(--site-background) !important;
+    background-image: none !important;
+}
+
+.contact-section {
+    background-color: #1b1b1e !important;
+    background-image: linear-gradient(rgba(16, 35, 42, .74), rgba(27, 27, 30, .88)),
+        url('../images/lake-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    color: #a79e9c;
+}
+
+.contact-section .aesthetic-title,
+.contact-section .contact-desc,
+.contact-section .detail-item,
+.contact-section input,
+.contact-section textarea {
+    color: #a79e9c;
+}
+
+.contact-section .submit-btn {
+    border-color: #a79e9c;
+    color: #a79e9c;
+}
+
+/* One continuous cinematic backdrop below the hero */
+.about-section,
+.edu-bold-aesthetic,
+.project-section,
+.lens-section,
+.contact-section {
+    background-color: #10232a !important;
+    background-image: linear-gradient(rgba(16, 35, 42, .72), rgba(27, 27, 30, .86)),
+        url('../images/lake-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    color: #a79e9c !important;
+}
+
+.edu-bold-aesthetic,
+.lens-section,
+.contact-section {
+    color: #a79e9c !important;
+}
+
+.edu-bold-aesthetic .edu-main-title,
+.edu-bold-aesthetic .school-name-big,
+.edu-bold-aesthetic .edu-intro,
+.lens-section .lens-title,
+.contact-section .aesthetic-title {
+    color: #a79e9c !important;
+}
+
+.edu-bold-aesthetic .edu-tag,
+.edu-bold-aesthetic .degree-name-small,
+.edu-bold-aesthetic .edu-number,
+.project-section .edu-tag,
+.lens-section .edu-tag,
+.contact-section .edu-tag {
+    color: #b58863 !important;
+}
+
+.edu-bold-aesthetic .edu-year,
+.edu-bold-aesthetic .edu-description {
+    color: rgba(211, 195, 185, .78) !important;
+}
+
+.edu-bold-aesthetic .edu-list,
+.edu-bold-aesthetic .edu-entry {
+    border-color: rgba(211, 195, 185, .28) !important;
+}
+
+.project-section .edu-main-title {
+    color: #a79e9c !important;
+}
+
+.project-section .project-card {
+    background: rgba(211, 195, 185, .94);
+    color: #1b1b1e;
+    backdrop-filter: blur(8px);
+}
+
+.about-section .about-heading h2,
+.about-section .about-heading p,
+.about-section .about-lead,
+.about-section .bio-text p,
+.about-section .about-details strong,
+.about-section .social-links a,
+.about-section .resume-button {
+    color: #a79e9c !important;
+}
+
+.about-section .about-heading h2 em,
+.about-section .about-details span {
+    color: #b58863 !important;
+}
+
+.about-section .about-heading,
+.about-section .about-details,
+.about-section .about-details div {
+    border-color: rgba(211, 195, 185, .28) !important;
+}
+
+.about-section .resume-button {
+    border-color: #a79e9c !important;
+}
+
+@media (max-width: 760px) {
+    .about-section,
+    .edu-bold-aesthetic,
+    .resume-section,
+    .project-section,
+    .lens-section,
+    .contact-section {
+        background-attachment: scroll !important;
+    }
+}
+
+/* Temporary section palette: lake imagery is reserved for Contact only */
+.about-section,
+.edu-bold-aesthetic,
+.resume-section,
+.project-section,
+.lens-section {
+    background-color: var(--site-background) !important;
+    background-image: none !important;
+    color: #161815 !important;
+}
+
+#about *,
+#education *,
+#experience *,
+#leadership *,
+#projects *,
+#lens * {
+    color: #161815 !important;
+}
+
+#about .about-heading h2 em {
+    color: #161815 !important;
+    -webkit-text-stroke: 0;
+}
+
+#about .about-heading,
+#about .about-identity,
+#about .about-details,
+#about .about-details div,
+#education .edu-list,
+#education .edu-entry,
+.resume-section,
+.career-list,
+.career-entry {
+    border-color: rgba(22, 24, 21, .25) !important;
+}
+
+#about .about-toolkit li,
+#about .resume-button,
+#projects .project-card,
+#projects .project-tags span {
+    border-color: rgba(22, 24, 21, .35) !important;
+}
+
+#projects .project-card {
+    background: rgba(255, 255, 255, .5) !important;
+}
+
+#projects .project-card:nth-child(2) {
+    background: rgba(181, 136, 99, .11) !important;
+}
+
+#projects .project-card:nth-child(3) {
+    background: rgba(121, 158, 172, .1) !important;
+}
+
+#contact,
+.contact-section {
+    background-color: #1b1b1e !important;
+    background-image: linear-gradient(rgba(16, 35, 42, .74), rgba(27, 27, 30, .88)),
+        url('../images/lake-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+#contact * {
+    color: #ffffff !important;
+}
+
+#about,
+#education,
+#experience,
+#projects,
+#leadership,
+#contact {
+    position: relative;
+}
+
+/* Full-section rise and focus transition */
+.js .section-motion-content {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translate3d(0, 90px, 0) scale(.985);
+    transform-origin: center top;
+    will-change: transform, opacity, filter;
+}
+
+.js .section-motion-visible > .section-motion-content {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate3d(0, 0, 0) scale(1);
+    transition: opacity .9s .16s ease, filter 1.05s .16s ease, transform 1.2s .16s cubic-bezier(.16, 1, .3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js .section-motion-content,
+    .js .section-motion-visible > .section-motion-content {
+        opacity: 1;
+        filter: none;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Temporary: all typography below the hero in white */
+.about-section *,
+.edu-bold-aesthetic *,
+.resume-section *,
+.project-section *,
+.lens-section *,
+.contact-section * {
+    color: #ffffff !important;
+}
+
+.project-section .project-card {
+    background: rgba(255, 255, 255, .065) !important;
+    border-color: rgba(255, 255, 255, .24) !important;
+}
+
+.project-section .project-card:nth-child(2) {
+    background: rgba(181, 136, 99, .13) !important;
+}
+
+.project-section .project-card:nth-child(3) {
+    background: rgba(121, 158, 172, .12) !important;
+}
+
+.project-section .project-tags span,
+.contact-section .submit-btn,
+.about-section .resume-button {
+    border-color: rgba(255, 255, 255, .72) !important;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+    color: rgba(255, 255, 255, .7) !important;
+}
+
+/* ID-level override so section-specific accent rules cannot win */
+#about *,
+#education *,
+#experience *,
+#leadership *,
+#projects *,
+#lens *,
+#contact * {
+    color: #ffffff !important;
+}
+
+.resume-section {
+    min-height: auto;
+    display: block;
+    padding: 125px 5vw 130px;
+    border-top: 1px solid rgba(255, 255, 255, .22);
+    background-color: #10232a !important;
+    background-image: linear-gradient(rgba(16, 35, 42, .72), rgba(27, 27, 30, .86)),
+        url('../images/lake-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.resume-section-inner {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.resume-header {
+    padding-bottom: 75px;
+}
+
+.resume-tag {
+    display: block;
+    margin-bottom: 24px;
+    font-family: "Inconsolata", monospace;
+    font-size: .63rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+}
+
+.resume-section h2 {
+    font-family: "Noto Serif Display", serif;
+    font-size: clamp(5rem, 10vw, 10rem);
+    font-weight: 520;
+    line-height: .72;
+    letter-spacing: -.06em;
+}
+
+.resume-section h2 em {
+    font-weight: inherit;
+    font-style: normal;
+}
+
+.career-list {
+    margin-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .28);
+}
+
+.career-entry {
+    min-height: 150px;
+    padding: 36px 0;
+    border-top: 1px solid rgba(255, 255, 255, .28);
+}
+
+.career-copy {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, .55fr);
+    gap: 12px 40px;
+    align-items: end;
+}
+
+.career-type {
+    grid-column: 1 / -1;
+}
+
+.career-number,
+.career-type {
+    font-family: "Inconsolata", monospace;
+    font-size: .62rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.career-copy h3 {
+    margin: 8px 0 10px;
+    font-family: "Noto Serif Display", serif;
+    font-size: clamp(2rem, 4.4vw, 4.7rem);
+    font-weight: 520;
+    line-height: .95;
+    letter-spacing: -.045em;
+}
+
+.career-copy p {
+    padding-bottom: 6px;
+    font-family: "Inconsolata", monospace;
+    font-size: .78rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .nav-links { gap: 18px; }
+    .resume-section { padding: 90px 6vw; }
+    .resume-header { padding-bottom: 55px; }
+    .resume-section h2 { font-size: 18vw; }
+    .career-entry { min-height: 0; padding: 30px 0; }
+    .career-copy { grid-template-columns: 1fr; gap: 8px; }
+    .career-copy p { padding-bottom: 0; }
+}
+
+/* Experience: workplace-led hierarchy */
+#experience .resume-header { padding-bottom: 58px; }
+
+#experience .resume-header h2 {
+    font-size: clamp(4rem, 7vw, 7rem);
+    line-height: .8;
+}
+
+#experience .career-entry {
+    min-height: 230px;
+    padding: 48px 0;
+}
+
+#experience .career-copy {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#experience .career-copy h3 {
+    margin: 0;
+    padding-bottom: 9px;
+    max-width: 1100px;
+    font-family: "Noto Serif Display", serif;
+    font-size: clamp(2.5rem, 5vw, 5.5rem);
+    font-weight: 500;
+    line-height: .96;
+    letter-spacing: -.045em;
+    text-transform: none;
+}
+
+#experience .career-organization {
+    display: block;
+    margin-top: 8px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: .72;
+}
+
+@media (max-width: 900px) {
+    #experience .resume-header h2 { font-size: clamp(3.5rem, 15vw, 6rem); }
+    #experience .career-copy { grid-template-columns: 1fr; gap: 18px; }
+    #experience .career-copy p { font-size: clamp(2.4rem, 10vw, 4rem); }
+}
+
+/* Unified section-heading scale and alignment */
+.about-section .about-heading h2,
+.edu-bold-aesthetic .edu-main-title,
+.project-section .edu-main-title,
+.resume-section h2,
+.contact-section .aesthetic-title {
+    margin-left: 0;
+    font-family: "Cormorant Garamond", "Times New Roman", serif;
+    font-size: clamp(4rem, 7vw, 7rem);
+    font-weight: 600;
+    line-height: .8;
+    letter-spacing: -.06em;
+    text-align: left;
+}
+
+.contact-section {
+    padding-inline: 5vw;
+}
+
+.contact-section .contact-wrapper {
+    width: 100%;
+    max-width: 1320px;
+    margin-inline: auto;
+}
+
+@media (max-width: 760px) {
+    .about-section .about-heading h2,
+    .edu-bold-aesthetic .edu-main-title,
+    .project-section .edu-main-title,
+    .resume-section h2,
+    .contact-section .aesthetic-title {
+        font-size: clamp(3.5rem, 15vw, 6rem);
+    }
+}
+
+/* Final palette override until individual section colors are selected. */
+.about-section,
+.edu-bold-aesthetic,
+.resume-section,
+.project-section,
+.lens-section {
+    background-color: var(--site-background) !important;
+    background-image: none !important;
+    color: #161815 !important;
+}
+
+#about *, #education *, #experience *, #leadership *, #projects *, #lens * {
+    color: #161815 !important;
+}
+
+#about .about-heading h2 em { color: #161815 !important; -webkit-text-stroke: 0; }
+#about .about-heading, #about .about-identity, #about .about-details, #about .about-details div,
+#education .edu-list, #education .edu-entry, .resume-section, .career-list, .career-entry {
+    border-color: rgba(22, 24, 21, .25) !important;
+}
+
+#about .about-toolkit li, #about .resume-button,
+#projects .project-card, #projects .project-tags span {
+    border-color: rgba(22, 24, 21, .35) !important;
+}
+
+#projects .project-card { background: rgba(255, 255, 255, .5) !important; }
+#projects .project-card:nth-child(2) { background: rgba(181, 136, 99, .11) !important; }
+#projects .project-card:nth-child(3) { background: rgba(121, 158, 172, .1) !important; }
+
+#contact.contact-section {
+    background-color: #1b1b1e !important;
+    background-image: linear-gradient(rgba(16, 35, 42, .74), rgba(27, 27, 30, .88)),
+        url('../images/lake-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+#contact * { color: #ffffff !important; }
+
+/* Reversed two-column leadership layout */
+@media (min-width: 901px) {
+    #leadership .resume-section-inner {
+        display: grid;
+        grid-template-columns: minmax(560px, 1.18fr) minmax(320px, .82fr);
+        gap: clamp(70px, 9vw, 150px);
+        align-items: start;
+    }
+
+    #leadership .career-list {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 78px;
+        border-top: 1px solid rgba(22, 24, 21, .25);
+    }
+
+    #leadership .resume-header {
+        grid-column: 2;
+        grid-row: 1;
+        position: sticky;
+        top: 145px;
+        padding: 0;
+    }
+
+    #leadership .resume-tag {
+        margin-bottom: 76px;
+    }
+
+    #leadership .resume-header h2 {
+        font-size: clamp(4.5rem, 6.2vw, 7.5rem);
+        line-height: .82;
+    }
+
+    #leadership .career-entry {
+        min-height: 175px;
+        padding: 34px 0;
+        border-top: 0;
+        border-bottom: 1px solid rgba(22, 24, 21, .25);
+    }
+
+    #leadership .career-copy {
+        display: block;
+    }
+
+    #leadership .career-copy h3 {
+        margin: 18px 0 8px;
+        font-size: clamp(2rem, 3vw, 3.6rem);
+    }
+
+    #leadership .career-copy p {
+        max-width: 520px;
+        padding: 0;
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        opacity: .72;
+    }
+}
+
+@media (max-width: 900px) {
+    #leadership .resume-section-inner {
+        display: block;
+    }
+}
+
+/* Restored continuous lake backdrop below the hero */
+#about.about-section,
+#education.edu-bold-aesthetic,
+#experience.resume-section,
+#projects.project-section,
+#leadership.resume-section,
+#contact.contact-section {
+    background-color: #10232a !important;
+    background-image: linear-gradient(rgba(16, 35, 42, .7), rgba(27, 27, 30, .86)),
+        url('../images/lake-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+#about *, #education *, #experience *, #projects *, #leadership *, #contact * {
+    color: #f3efe5 !important;
+}
+
+#about .about-heading h2 em {
+    color: #f3efe5 !important;
+    -webkit-text-stroke: 0;
+}
+
+#about .about-heading,
+#about .about-details,
+#about .about-details div,
+#education .edu-list,
+#education .edu-entry,
+#experience .career-list,
+#experience .career-entry,
+#projects .project-card,
+#projects .project-tags span,
+#leadership .career-list,
+#leadership .career-entry {
+    border-color: rgba(243, 239, 229, .28) !important;
+}
+
+#projects .project-card {
+    background: rgba(243, 239, 229, .07) !important;
+}
